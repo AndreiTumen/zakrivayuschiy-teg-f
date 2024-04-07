@@ -50,12 +50,24 @@
   margin-bottom: 25px;
 }
 
+<<<<<<< HEAD
 .logo-group_link { /* ссылка на логотип */
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem); /* большой */
   text-decoration: none;
 }
 
 .logo-group_title { /* подзаголовок в header */
+=======
+.logo-group_title { /* заголовок в header */
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem); /* большой */
+}
+
+.logo-link { /* логотип ссылка h1 */
+  text-decoration: none;
+}
+
+.logo-group_subtitle { /* подзаголовок в header */
+>>>>>>> 88352936f6a5bfacd6bdd826c3c32fc1dffa8e4a
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem); /* маленький */
 }
 
@@ -365,6 +377,82 @@ button .button_floppy {
   height: 39px;
 }
 
+<<<<<<< HEAD
+=======
+/* группа contour, main-body, core */
+
+.like-icon.is-liked .heart {
+  transform-origin: center; 
+  animation: heart-scale 0.3s 0.1s ease-in alternate;
+}
+
+/* контур сердца */
+
+.contour { 
+  fill: var(--color-accent-heart, grey);
+  transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .contour { /* состояние после клика по сердцу 2 */
+  fill: var(--color-main-heart, red);
+  transition: fill 0.3s 0.06s linear;
+}
+
+/* основное тело сердца */
+
+.main-body { /* дефолтное состояние */
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--color-accent-heart, grey);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--color-main-heart, red);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .main-body { /* состояние после клика по сердцу 2 */
+  fill: var(--color-main-heart, red);
+  transition: fill 0.3s 0.05s linear;
+}
+/* сердцевина сердца */
+
+.core { 
+  fill: transparent; /* дефолтное состояние */
+  transition: fill 0.3s 0.03s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--color-accent-heart, grey);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:active .core {
+  fill: var(--color-main-heart, red);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .core { /* состояние после клика по сердцу 2 */
+  fill: var(--color-main-heart, red);
+  transition: fill 0.3s linear;
+}
+
+/* искры сердца */
+
+.sparks {
+  opacity: 0; 
+  fill: var(--color-main-heart, red);
+}
+
+.like-icon.is-liked .sparks {
+  animation: heart-sparks 0.3s 0.3s ease-in alternate;
+}
+
+>>>>>>> 88352936f6a5bfacd6bdd826c3c32fc1dffa8e4a
 @media (width >= 500px) {
 
   .footer_button {

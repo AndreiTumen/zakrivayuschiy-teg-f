@@ -13,6 +13,7 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+<<<<<<< HEAD
 /* группа contour, main-body, core */
 
 .like-icon.is-liked .heart {
@@ -90,6 +91,12 @@
 @keyframes indicator {
   0% {
     transform: translateX(0);
+=======
+@keyframes indicator {
+
+  0% {
+    transform: translateX();
+>>>>>>> 88352936f6a5bfacd6bdd826c3c32fc1dffa8e4a
   }
 
   100% {
@@ -98,6 +105,10 @@
 }
 
 @keyframes heart-scale {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 88352936f6a5bfacd6bdd826c3c32fc1dffa8e4a
   0% {
     transform: scale(1);
   }
@@ -108,6 +119,10 @@
 }
 
 @keyframes heart-sparks {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 88352936f6a5bfacd6bdd826c3c32fc1dffa8e4a
   0% {
     opacity: 0;
   }
@@ -115,4 +130,8 @@
   100% {
     opacity: 1;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 88352936f6a5bfacd6bdd826c3c32fc1dffa8e4a
 }
